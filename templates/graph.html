@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ stock | safe }} data</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.0.min.css" type="text/css" />
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.0.min.js" type="text/javascript"></script>
+    {{ script | safe }}
+  </head>
+
+  <body>
+    <div class=page>
+      <div class="col-md-6">
+      <h1>Generated graph for {{ stock | safe }}</h1>
+      <a href="/index" title="Back to the Home page"><b>BACK</b></a> <br>
+      {{ div | safe }}
+      </div>
+    </div>
+  </body>
+</html>
